@@ -1,0 +1,4 @@
+npx create-react-app my-app
+npm install bootstrap --save
+npm install --save reactstrap react react-dom
+npm install react-router-dom 

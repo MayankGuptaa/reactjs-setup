@@ -9,12 +9,16 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
+
+
+import Logo from '../../assets/images/React_logo_wordmark.png';
+
+ 
 class Header extends Component {
 
  constructor(props) {
@@ -36,7 +40,7 @@ class Header extends Component {
 
  <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand to="/">reactstrap</NavbarBrand>
+          <NavbarBrand to="/"><img className="main-logo" src={Logo} alt="" /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
